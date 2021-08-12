@@ -2,12 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no"
     />
-    <title>Document</title>
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="flex-wrapper">
+      <h1>ToDoList</h1>
+      <div class="add-todo-wrapper">
+        <div class="input-wrapper">
+          <input type="text" id="description-task" />
+        </div>
+        <div class="button-wrapper">
+          <button id="add-task-btn">Add</button>
+        </div>
+      </div>
+
+      <h2>Tasks for the day:</h2>
+      <div id="todos-wrapper" class="todos-wrapper">
+        <!--  -->
+      </div>
+
+      <button class="btn-delete-all" onclick="deleteAllTask()">
+        Delete All
+      </button>
+    </div>
+    <script src="main.js"></script>
+  </body>
 </html>

@@ -1,0 +1,72 @@
+.flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-todo-wrapper {
+  display: flex;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 5px;
+  margin: 20px 0;
+  border: 1px solid #000;
+}
+
+.description {
+  margin-right: 80px;
+}
+
+.todos-wrapper {
+  margin-bottom: 100px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.btn-completed {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.checked {
+  opacity: 0.5;
+  background-color: darkgray;
+}
+
+.btn-delete {
+  padding: 5px 10px;
+
+  border: 1px solid transparent;
+  background-color: crimson;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  background-color: #fff;
+  color: crimson;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+  border: 1px solid crimson;
+}
+
+.todo-item.deletion {
+  animation: opacity 1s ease-in-out;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
