@@ -2,11 +2,6 @@ const addTaskBtn = document.getElementById('add-task-btn');
 const descTaskInput = document.getElementById('description-task');
 const todosWrapper = document.getElementById('todos-wrapper');
 
-/**
- * TODO Сделать отдельный метод для
- * TODO updateLocalStorage() и fillHtmlList()
- * */
-
 let tasks;
 const render = () => {
   if (!localStorage.tasks) {
